@@ -1,0 +1,58 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/psd_hydrometer_rawdata.schema.json",
+    "title": "PSD sieving raw",
+    "description": "JSON schema for raw hydrometer data",
+    "type": "object",
+    "properties": {
+        "mass": {
+            "description": "Mass of the dry material",
+            "type": "number"},
+        "flaskdiameter": {
+            "description": "Internal diameter of the hydrometer flask",
+            "type": "number"},
+        "hydrometer_data": {
+            "type": "object",
+            "properties": {
+                "Time [min]": {
+                    "description": "Hydrometer read-off times",
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                },
+                "L1 [mm]": {
+                    "description": "L1 readings",
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 1,
+                    "uniqueItems": false
+                },
+                "L2 [mm]": {
+                    "description": "L2 readings",
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 1,
+                    "uniqueItems": false
+                },
+                "T [°C]": {
+                    "description": "Temperature readings",
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 1,
+                    "uniqueItems": false
+                }
+            },
+            "required": [ "Time [min]", "L1 [mm]", "L2 [mm]", "T [°C]"]
+        }
+    },
+    "required": [ "mass", "flaskdiameter", "hydrometer_data"]
+}

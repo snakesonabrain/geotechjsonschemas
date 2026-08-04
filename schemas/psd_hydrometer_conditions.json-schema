@@ -1,0 +1,44 @@
+{"$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://example.com/psd_hydrometer_conditions.schema.json",
+ "title": "PSD sieving raw",
+ "description": "JSON schema for hydrometer conditions",
+ "type": "object",
+ "properties": {"starttemperature": {
+            "description": "Temperature at the start of the test [°C]",
+            "type": "number"
+        },
+        "solution": {
+            "description": "Solution used",
+            "enum": ["DEMIN", "DECAL"]
+        },
+        "offset": {
+            "description": "Distance between the top plate and the tip of the measurement device [mm]",
+            "type": "number"
+        },
+        "suspension_volume": {
+            "description": "Initial suspension volume [ml]",
+            "type": "number"
+        },
+        "mass_hydrometer": {
+            "description": "Mass of the hydrometer [gr]",
+            "type": "number"
+        },
+        "diameter_stem": {
+            "description": "Diameter of the stem of the hydrometer [mm]",
+            "type": "number"
+        },
+        "length_stem": {
+            "description": "Length of the stem of the hydrometer [mm]",
+            "type": "number"
+        },
+        "volume_bulb": {
+            "description": "Volume of the bulb of the hydrometer [mm3]",
+            "type": "number"
+        },
+        "grain_density": {
+            "description": "Grain density used for settling calculation [kg/m3]",
+            "type": "number"
+        }
+    },
+    "required": ["solution", "offset", "suspension_volume", "mass_hydrometer", "diameter_stem", "length_stem", "volume_bulb", "grain_density"]
+}

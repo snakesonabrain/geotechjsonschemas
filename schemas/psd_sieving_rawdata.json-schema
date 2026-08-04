@@ -1,0 +1,70 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/psd_sieving_rawdata.schema.json",
+    "title": "PSD sieving raw",
+    "description": "JSON schema for raw sieving data",
+    "type": "object",
+    "properties": {
+        "massA": {
+            "description": "Mass of the A fraction",
+            "type": "number"},
+        "massBC": {
+            "description": "Mass of the B+C fraction",
+            "type": "number"},
+        "carbonates_removed": {
+            "description": "Check to see whether carbonates are removed or not",
+            "type": "boolean"},
+        "organics_removed": {
+            "description": "Check to see whether carbonates are removed or not",
+            "type": "boolean"},
+        "sieving_A_fraction": {
+            "type": "object",
+            "properties": {
+                "sizesA": {
+                    "description": "Grain sizes greater than 2mm",
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                },
+                "massesA": {
+                    "description": "Masses retained on each of the sieves for the A fraction",
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 1,
+                    "uniqueItems": false
+                }
+            },
+            "required": [ "sizesA", "massesA"]
+        },
+        "sieving_B_fraction": {
+            "type": "object",
+            "properties": {
+                "sizesB": {
+                    "description": "Grain sizes smaller than 2mm",
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                },
+                "massesB": {
+                    "description": "Masses retained on each of the sieves for the B fraction",
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 1,
+                    "uniqueItems": false
+                }
+            },
+            "required": [ "sizesB", "massesB"]
+        }
+    },
+    "required": [ "massA", "massBC", "organics_removed", "carbonates_removed", "sieving_A_fraction", "sieving_B_fraction"]
+}

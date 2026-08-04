@@ -1,0 +1,11 @@
+{
+    "starttemperature": 20.0,
+    "solution": "DEMIN",
+    "offset": 33.01,
+    "suspension_volume": 1000.0,
+    "mass_hydrometer": 56.7,
+    "diameter_stem": 5.25,
+    "length_stem": 133.89,
+    "volume_bulb": 54760.0,
+    "grain_density": 2650.0
+ }

@@ -1,0 +1,42 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/psd_processed.schema.json",
+    "title": "PSD processed",
+    "description": "JSON schema for processed PSD data",
+    "type": "object",
+    "properties": {
+        "D [mm]": {
+            "description": "Diameters for the PSD curve",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "minItems": 1,
+            "uniqueItems": true},
+        "Pct finer total [%]": {
+            "description": "Precentages for the PSD curve",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "minItems": 1,
+            "uniqueItems": false},
+        "test stage": {
+            "description": "Test stage for parts of the PSD curve",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1,
+            "uniqueItems": false},
+        "Pct total [%]": {
+            "description": "Precentages (inverse) for the PSD curve",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "minItems": 1,
+            "uniqueItems": false}
+        },
+    "required": [ "D [mm]", "Pct finer total [%]", "test stage"]
+}

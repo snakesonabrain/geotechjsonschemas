@@ -1,0 +1,8 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/psd_sieving_conditions.schema.json",
+    "title": "PSD sieving raw",
+    "description": "JSON schema for sieving conditions",
+    "type": "object",
+    "properties": {}
+}
