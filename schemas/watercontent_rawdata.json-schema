@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/watercontent_rawdata.json-schema",
+    "title": "Watercontent raw",
+    "description": "JSON schema for raw data of a water content test",
+    "type": "object",
+    "properties": {
+        "container ID": {
+            "description": "Identifier of the container",
+            "type": "string"
+        },
+        "Container mass [g]": {
+            "description": "Mass of the container",
+            "type": "number"
+        },
+        "Mass container and wet soil [g]": {
+            "description": "Mass of the container and the wet soil",
+            "type": "number"
+        },
+        "Mass container and dry soil [g]": {
+            "description": "Mass of the container and the dry soil",
+            "type": "number"
+        }
+    },
+    "required": ["container ID", "Container mass [g]", "Mass container and wet soil [g]", "Mass container and dry soil [g]"]
+}

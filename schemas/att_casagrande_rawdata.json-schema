@@ -1,0 +1,30 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/att_casagrande_rawdata.json-schema",
+    "title": "Atterberg limit tests with the Casagrande cup and thread rolling raw data",
+    "description": "JSON schema for raw data of Atterberg limit tests with the Casagrande cup",
+    "type": "object",
+    "properties": {
+        "liquidlimit": {
+            "description": "Data for the liquid limit test",
+            "type": "object",
+            "properties": {
+                "testpoints": {
+                    "description": "Array with points of the individual tests (different water contents)",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "testdata": {
+                                "description": "Water content data for the test point",
+                                "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/watercontent_rawdata.json-schema"
+                            }
+                        },
+                        "required": ["container ID", "Container mass [g]"]
+                    }
+                }
+            }
+        }
+    },
+    "required": [ "liquidlimit"]
+}
