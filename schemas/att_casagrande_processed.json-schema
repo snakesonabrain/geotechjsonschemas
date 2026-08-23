@@ -19,7 +19,11 @@
             "type": "number"},
         "WC N=100 [%]": {
             "description": "Best fit line point 2",
-            "type": "number"}
-        },
-    "required": [ "LL [%]", "PL [%]", "PI [%]"]
+            "type": "number"},
+        "remarks": {
+            "description": "Remarks from test processing",
+            "type": "string"
+        }
+    },
+    "required": [ "LL [%]", "PL [%]", "PI [%]", "remarks"]
 }

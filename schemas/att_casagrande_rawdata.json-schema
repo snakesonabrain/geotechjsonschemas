@@ -30,6 +30,10 @@
                         },
                         "required": ["watercontent", "No blows", "remarks"]
                     }
+                },
+                "quality": {
+                    "description": "Test quality score",
+                    "enum": ["A", "B", "C", "D", "E", "N/A"]
                 }
             },
             "required": ["testpoints"]

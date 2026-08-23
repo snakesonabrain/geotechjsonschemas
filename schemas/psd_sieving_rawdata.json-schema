@@ -64,7 +64,11 @@
                 }
             },
             "required": [ "sizesB", "massesB"]
+        },
+        "remarks": {
+            "description": "Remarks from test execution",
+            "type": "string"
         }
     },
-    "required": [ "massA", "massBC", "organics_removed", "carbonates_removed", "sieving_A_fraction", "sieving_B_fraction"]
+    "required": [ "massA", "massBC", "organics_removed", "carbonates_removed", "sieving_A_fraction", "sieving_B_fraction", "remarks"]
 }
