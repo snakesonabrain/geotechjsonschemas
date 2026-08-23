@@ -2,21 +2,34 @@
     "liquidlimit": {
         "testpoints": [
             {
-                "testdata": {
+                "watercontent": {
                     "container ID": "1",
                     "Container mass [g]": 10.1,
                     "Mass container and wet soil [g]": 50.3,
                     "Mass container and dry soil [g]": 45.1
-                }
+                },
+                "No blows": 20,
+                "remarks": ""
             },
             {
-                "testdata": {
-                    "container ID": "1",
-                    "Container mass [g]": 10.1,
-                    "Mass container and wet soil [g]": 50.3,
-                    "Mass container and dry soil [g]": 45.1
-                }
+                "watercontent": {
+                    "container ID": "2",
+                    "Container mass [g]": 10.2,
+                    "Mass container and wet soil [g]": 45.3,
+                    "Mass container and dry soil [g]": 40.1
+                },
+                "No blows": 30,
+                "remarks": "Problems"
             }
         ]
+    },
+    "plasticlimit": {
+        "watercontent": {
+            "container ID": "1",
+                "Container mass [g]": 10.1,
+                "Mass container and wet soil [g]": 50.3,
+                "Mass container and dry soil [g]": 45.1
+            },
+            "remarks": ""
     }
 }

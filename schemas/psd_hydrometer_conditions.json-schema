@@ -1,5 +1,5 @@
 {"$schema": "https://json-schema.org/draft/2020-12/schema",
- "$id": "https://example.com/psd_hydrometer_conditions.schema.json",
+ "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/psd_hydrometer_conditions.schema.json",
  "title": "PSD sieving raw",
  "description": "JSON schema for hydrometer conditions",
  "type": "object",

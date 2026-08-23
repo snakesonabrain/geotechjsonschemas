@@ -1,0 +1,25 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/att_casagrande_processed.schema.json",
+    "title": "Atterberg Casagrande processed",
+    "description": "JSON schema for processed Atterberg limit data with Casagrande method",
+    "type": "object",
+    "properties": {
+        "LL [%]": {
+            "description": "Liquid limit",
+            "type": "number"},
+        "PL [%]": {
+            "description": "Plastic limit",
+            "type": "number"},
+        "PI [%]": {
+            "description": "Plasticity index",
+            "type": "number"},
+        "WC N=1 [%]": {
+            "description": "Best fit line point 1",
+            "type": "number"},
+        "WC N=100 [%]": {
+            "description": "Best fit line point 2",
+            "type": "number"}
+        },
+    "required": [ "LL [%]", "PL [%]", "PI [%]"]
+}

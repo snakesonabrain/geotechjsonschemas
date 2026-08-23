@@ -15,16 +15,40 @@
                     "items": {
                         "type": "object",
                         "properties": {
-                            "testdata": {
+                            "watercontent": {
                                 "description": "Water content data for the test point",
                                 "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/watercontent_rawdata.json-schema"
+                            },
+                            "No blows": {
+                                "description": "Number of blows",
+                                "type": "integer"
+                            },
+                            "remarks": {
+                                "description": "Remarks from test execution",
+                                "type": "string"
                             }
                         },
-                        "required": ["container ID", "Container mass [g]"]
+                        "required": ["watercontent", "No blows", "remarks"]
                     }
                 }
-            }
+            },
+            "required": ["testpoints"]
+        },
+        "plasticlimit": {
+            "description": "Data for the plastic limit test",
+            "type": "object",
+            "properties": {
+                "watercontent": {
+                        "description": "Water content data for the test point",
+                        "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/watercontent_rawdata.json-schema"
+                    },
+                "remarks": {
+                    "description": "Remarks from test execution",
+                    "type": "string"
+                }
+            },
+            "required": ["watercontent", "remarks"]
         }
     },
-    "required": [ "liquidlimit"]
+    "required": [ "liquidlimit", "plasticlimit"]
 }

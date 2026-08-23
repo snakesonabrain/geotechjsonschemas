@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://example.com/psd_processed.schema.json",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/psd_processed.schema.json",
     "title": "PSD processed",
     "description": "JSON schema for processed PSD data",
     "type": "object",
