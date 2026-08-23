@@ -56,7 +56,11 @@
                 }
             },
             "required": [ "Time [min]", "L1 [mm]", "L2 [mm]", "T [°C]"]
+        },
+        "quality": {
+            "description": "Test execution quality score",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
         }
     },
-    "required": [ "mass", "flaskdiameter", "hydrometer_data", "remarks"]
+    "required": [ "mass", "flaskdiameter", "hydrometer_data", "remarks", "quality"]
 }

@@ -21,7 +21,11 @@
                 "No blows": 30,
                 "remarks": "Problems"
             }
-        ]
+        ],
+        "quality": {
+            "quality class": "B",
+            "quality score": 70
+        }
     },
     "plasticlimit": {
         "watercontent": {
@@ -29,7 +33,11 @@
                 "Container mass [g]": 10.1,
                 "Mass container and wet soil [g]": 50.3,
                 "Mass container and dry soil [g]": 45.1
-            },
-            "remarks": ""
+        },
+        "remarks": "",
+        "quality": {
+            "quality class": "B",
+            "quality score": 70
+        }
     }
 }

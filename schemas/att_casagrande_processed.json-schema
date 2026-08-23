@@ -23,7 +23,11 @@
         "remarks": {
             "description": "Remarks from test processing",
             "type": "string"
+        },
+        "quality": {
+            "description": "Test processing quality score",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
         }
     },
-    "required": [ "LL [%]", "PL [%]", "PI [%]", "remarks"]
+    "required": [ "LL [%]", "PL [%]", "PI [%]", "remarks", "quality"]
 }

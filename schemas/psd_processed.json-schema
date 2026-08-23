@@ -36,7 +36,43 @@
                 "type": "number"
             },
             "minItems": 1,
-            "uniqueItems": false}
+            "uniqueItems": false},
+        "d10 [mm]": {
+            "description": "Diameter for which 10% of grains is smaller",
+            "type": "number"
         },
-    "required": [ "D [mm]", "Pct finer total [%]", "test stage"]
+        "d30 [mm]": {
+            "description": "Diameter for which 30% of grains is smaller",
+            "type": "number"
+        },
+        "d50 [mm]": {
+            "description": "Diameter for which 50% of grains is smaller",
+            "type": "number"
+        },
+        "d60 [mm]": {
+            "description": "Diameter for which 60% of grains is smaller",
+            "type": "number"
+        },
+        "Cu [-]": {
+            "description": "Coefficient of uniformity",
+            "type": "number"
+        },
+        "Cc [-]": {
+            "description": "Coefficient of curvature",
+            "type": "number"
+        },
+        "Fines content [%]": {
+            "description": "Percentages passing the No200 sieve (75micron)",
+            "type": "number"
+        },
+        "remarks": {
+            "description": "Remarks from test processing",
+            "type": "string"
+        },
+        "quality": {
+            "description": "Test processing quality score",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+        }
+    },
+    "required": [ "D [mm]", "Pct finer total [%]", "test stage", "remarks", "quality"]
 }
