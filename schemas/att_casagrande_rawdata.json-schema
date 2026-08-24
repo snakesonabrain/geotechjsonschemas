@@ -34,9 +34,13 @@
                 "quality": {
                     "description": "Test quality score",
                     "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+                },
+                "execution": {
+                    "description": "Test execution metadata",
+                    "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/execution.json-schema"
                 }
             },
-            "required": ["testpoints", "quality"]
+            "required": ["testpoints", "quality", "execution"]
         },
         "plasticlimit": {
             "description": "Data for the plastic limit test",
@@ -49,9 +53,13 @@
                 "quality": {
                     "description": "Test quality score",
                     "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+                },
+                "execution": {
+                    "description": "Test execution metadata",
+                    "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/execution.json-schema"
                 }
             },
-            "required": ["watercontent", "quality"]
+            "required": ["watercontent", "quality", "execution"]
         }
     },
     "required": [ "liquidlimit", "plasticlimit"]

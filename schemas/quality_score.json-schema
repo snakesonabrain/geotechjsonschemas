@@ -5,16 +5,19 @@
     "description": "JSON schema for quality scoring system implemented at UGGI",
     "type": "object",
     "properties": {
-        "quality class": {
+        "quality_class": {
             "description": "Test quality class",
             "enum": ["A", "B", "C", "D", "E", "N/A"]
         },
-        "quality score": {
+        "quality_score": {
             "description": "Test quality score between 0 and 100",
             "type": "number",
             "minimum": 0,
             "maximum": 100
         }
     },
-    "required": ["quality class", "quality score"]
+    "required": ["quality_class"],
+    "dependentRequired": {
+        "quality_class": ["quality_score"]
+    }
 }

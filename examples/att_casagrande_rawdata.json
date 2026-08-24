@@ -25,6 +25,9 @@
         "quality": {
             "quality class": "B",
             "quality score": 70
+        },
+        "execution": {
+            "execution_remarks": "Metadata not available"
         }
     },
     "plasticlimit": {
@@ -34,10 +37,14 @@
             "Mass container and wet soil [g]": 50.3,
             "Mass container and dry soil [g]": 45.1
         },
-        "remarks": "",
         "quality": {
             "quality class": "B",
             "quality score": 70
+        },
+        "execution": {
+            "executed_by": "Bruno Stuyts",
+            "execution_date": "24/04/2026",
+            "execution_remarks": "Metadata not available"
         }
     }
 }
