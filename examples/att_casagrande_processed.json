@@ -5,7 +5,7 @@
     "WC N=1 [%]": 115,
     "WC N=100 [%]": 85,
     "quality": {
-        "quality class": "N/A",
+        "quality_class": "N/A",
         "quality score": 65
     },
     "processing": {

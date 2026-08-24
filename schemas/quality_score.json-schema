@@ -16,7 +16,6 @@
             "maximum": 100
         }
     },
-    "required": ["quality_class"],
     "dependentRequired": {
         "quality_class": ["quality_score"]
     }
