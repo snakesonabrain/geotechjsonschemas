@@ -1,0 +1,21 @@
+{
+    "testpoints": [
+        {
+            "Container ID": "1",
+            "Container mass [g]": 10.1,
+            "Mass container and dry soil [g]": 45.1,
+            "Mass container and soil after test [g]": 34.1
+        },
+        {
+            "Container ID": "2",
+            "Container mass [g]": 10.2,
+            "Mass container and dry soil [g]": 40.1,
+            "Mass container and soil after test [g]": 32.1
+        }
+    ],
+    "remarks": "",
+    "quality": {
+        "quality class": "B",
+        "quality score": 70
+    }
+}

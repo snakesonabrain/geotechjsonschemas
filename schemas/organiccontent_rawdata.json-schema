@@ -1,0 +1,44 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/organiccontent_rawdata.json-schema",
+    "title": "Organic content (loss on ignition) test raw data",
+    "description": "JSON schema for raw data of organic content test (loss on ignition)",
+    "type": "object",
+    "properties": {
+        "testpoints": {
+            "description": "Array with points of the individual tests (different specimens)",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Container ID": {
+                        "description": "Identifier of the container",
+                        "type": "string"
+                    },
+                    "Container mass [g]": {
+                        "description": "Mass of the container",
+                        "type": "number"
+                    },
+                    "Mass container and dry soil [g]": {
+                        "description": "Mass of the container and dry soil (after water content test)",
+                        "type": "number"
+                    },
+                    "Mass container and soil after test [g]": {
+                        "description": "Mass after heating at 440°C",
+                        "type": "number"
+                    }
+                },
+                "required": ["Container ID", "Container mass [g]", "Mass container and dry soil [g]", "Mass container and soil after test [g]"]
+            }
+        },
+        "remarks": {
+            "description": "Remarks from test execution",
+            "type": "string"
+        },
+        "quality": {
+            "description": "Test quality score",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+        }
+    },
+    "required": ["testpoints", "remarks", "quality"]
+}

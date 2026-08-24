@@ -1,0 +1,18 @@
+{
+    "container ID": "1",
+    "Container mass [g]": 10.1,
+    "Container diameter [mm]": 30.1,
+    "Container height [mm]": 50.7,
+    "Mass container and wet soil [g]": 50.3,
+    "watercontent": {
+        "container ID": "2",
+        "Container mass [g]": 10.2,
+        "Mass container and wet soil [g]": 45.3,
+        "Mass container and dry soil [g]": 40.1
+    },
+    "remarks": "Soil appears dried out",
+    "quality": {
+        "quality class": "C",
+        "quality score": 70
+    }
+}

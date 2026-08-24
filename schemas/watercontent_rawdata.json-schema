@@ -5,7 +5,7 @@
     "description": "JSON schema for raw data of a water content test",
     "type": "object",
     "properties": {
-        "container ID": {
+        "Container ID": {
             "description": "Identifier of the container",
             "type": "string"
         },
@@ -22,5 +22,5 @@
             "type": "number"
         }
     },
-    "required": ["container ID", "Container mass [g]", "Mass container and wet soil [g]", "Mass container and dry soil [g]"]
+    "required": ["Container ID", "Container mass [g]", "Mass container and wet soil [g]", "Mass container and dry soil [g]"]
 }

@@ -1,0 +1,50 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/density_processed.json-schema",
+    "title": "Density processed",
+    "description": "JSON schema for processed data of a wet density (proofing ring) test",
+    "type": "object",
+    "properties": {
+        "Sample volume [mm3]": {
+            "description": "Volume of the sample",
+            "type": "number"
+        },
+        "Water content [%]": {
+            "description": "Water content",
+            "type": "number"
+        },
+        "Wet density [kg/m3]": {
+            "description": "Wet density of the sample",
+            "type": "number"
+        },
+        "Dry density [kg/m3]": {
+            "description": "Dry density of the sample",
+            "type": "number"
+        },
+        "Wet unit weight [kN/m3]": {
+            "description": "Wet unit weight of the sample",
+            "type": "number"
+        },
+        "Dry unit weight [kN/m3]": {
+            "description": "Dry unit weight of the sample",
+            "type": "number"
+        },
+        "Specific gravity solids [-]": {
+            "description": "Specific gravity used or assumed for calculation",
+            "type": "number"
+        },
+        "Void ratio [-]": {
+            "description": "Void ratio of the soil",
+            "type": "number"
+        },
+        "Porosity [-]": {
+            "description": "Porosity of the soil",
+            "type": "number"
+        },
+        "Saturation [%]": {
+            "description": "Saturation of the soil",
+            "type": "number"
+        }
+    },
+    "required": ["Sample volume [mm3]", "Water content [%]", "Wet density [kg/m3]", "Dry density [kg/m3]", "Wet unit weight [kN/m3]", "Dry unit weight [kN/m3]", "Specific gravity solids [-]", "Void ratio [-]", "Porosity [-]", "Saturation [%]"]
+}
