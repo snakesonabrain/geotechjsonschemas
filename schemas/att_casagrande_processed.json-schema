@@ -20,14 +20,14 @@
         "WC N=100 [%]": {
             "description": "Best fit line point 2",
             "type": "number"},
-        "remarks": {
-            "description": "Remarks from test processing",
-            "type": "string"
-        },
         "quality": {
             "description": "Test processing quality score",
             "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+        },
+        "processing": {
+            "description": "Test processing metadata",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/processing.json-schema"
         }
     },
-    "required": [ "LL [%]", "PL [%]", "PI [%]", "remarks", "quality"]
+    "required": [ "LL [%]", "PL [%]", "PI [%]", "quality", "processing"]
 }

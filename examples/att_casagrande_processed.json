@@ -4,9 +4,11 @@
     "PI [%]": 41.4,
     "WC N=1 [%]": 115,
     "WC N=100 [%]": 85,
-    "remarks": "",
     "quality": {
         "quality class": "N/A",
         "quality score": 65
+    },
+    "processing": {
+        "processing_remarks": "Processing unavailable"
     }
 }

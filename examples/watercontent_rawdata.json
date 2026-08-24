@@ -4,7 +4,8 @@
     "Mass container and wet soil [g]": 50.3,
     "Mass container and dry soil [g]": 45.1,
     "Execution": {
-        "Executed by": "Bruno Stuyts",
-        "Execution date": "24/04/1983"
+        "execution_remarks": "No comments",
+        "executed_by": "Bruno Stuyts",
+        "execution_date": "24/04/1983"
     }
 }

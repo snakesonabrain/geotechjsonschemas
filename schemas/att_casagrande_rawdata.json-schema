@@ -19,7 +19,7 @@
                                 "description": "Water content data for the test point",
                                 "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/watercontent_rawdata.json-schema"
                             },
-                            "No blows": {
+                            "no blows": {
                                 "description": "Number of blows",
                                 "type": "integer"
                             },
@@ -43,19 +43,15 @@
             "type": "object",
             "properties": {
                 "watercontent": {
-                        "description": "Water content data for the test point",
-                        "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/watercontent_rawdata.json-schema"
-                    },
-                "remarks": {
-                    "description": "Remarks from test execution",
-                    "type": "string"
+                    "description": "Water content data for the test point",
+                    "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/watercontent_rawdata.json-schema"
                 },
                 "quality": {
                     "description": "Test quality score",
                     "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
                 }
             },
-            "required": ["watercontent", "remarks", "quality"]
+            "required": ["watercontent", "quality"]
         }
     },
     "required": [ "liquidlimit", "plasticlimit"]
