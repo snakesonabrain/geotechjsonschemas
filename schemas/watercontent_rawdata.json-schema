@@ -26,5 +26,5 @@
             "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/execution.json-schema"
         }
     },
-    "required": ["Container ID", "Container mass [g]", "Mass container and wet soil [g]", "Mass container and dry soil [g]", "Execution"]
+    "required": ["Container ID", "Container mass [g]", "Mass container and wet soil [g]", "Mass container and dry soil [g]"]
 }
