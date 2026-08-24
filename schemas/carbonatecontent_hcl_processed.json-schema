@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/carbonatecontent_hcl_processed.json-schema",
+    "title": "Carbonate content (HCl effervescense) processed test data",
+    "description": "JSON schema for processed data of carbonate content test (effervescense with HCl)",
+    "type": "object",
+    "properties": {
+        "testpoints": {
+            "description": "Array with results of the individual tests (different specimens)",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Organic content [%]": {
+                        "description": "Organic content of the specimen",
+                        "type": "number"
+                    }
+                },
+                "required": ["Organic content [%]"]
+            }
+        },
+        "Average organic content [%]": {
+            "description": "Average of the organic content tests (number used in reporting)",
+            "type": "number"
+        }
+    },
+    "required": ["testpoints", "Average organic content [%]"]
+}

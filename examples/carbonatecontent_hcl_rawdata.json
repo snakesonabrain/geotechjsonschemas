@@ -1,0 +1,24 @@
+{
+    "testpoints": [
+        {
+            "Mass dry soil [g]": 10.1,
+            "Pressure before reaction [kPa]": 50,
+            "Pressure after reaction [kPa]": 75
+        },
+        {
+            "Mass dry soil [g]": 10.1,
+            "Pressure before reaction [kPa]": 50,
+            "Pressure after reaction [kPa]": 75
+        },
+        {
+            "Mass dry soil [g]": 10.1,
+            "Pressure before reaction [kPa]": 50,
+            "Pressure after reaction [kPa]": 75
+        }
+    ],
+    "remarks": "Example remark",
+    "quality": {
+        "quality class": "C",
+        "quality score": 70
+    }
+}

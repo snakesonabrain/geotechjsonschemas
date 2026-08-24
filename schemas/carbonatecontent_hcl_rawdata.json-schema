@@ -1,0 +1,40 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/carbonatecontent_hcl_rawdata.json-schema",
+    "title": "Carbonate content (reaction with HCl) test raw data",
+    "description": "JSON schema for raw data of carbonate content test (reaction with HCl)",
+    "type": "object",
+    "properties": {
+        "testpoints": {
+            "description": "Array with points of the individual tests (different specimens)",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Mass dry soil [g]": {
+                        "description": "Mass of the dry soil",
+                        "type": "number"
+                    },
+                    "Pressure before reaction [kPa]": {
+                        "description": "Pressure before the reaction",
+                        "type": "number"
+                    },
+                    "Pressure after reaction [kPa]": {
+                        "description": "Pressure after the reaction",
+                        "type": "number"
+                    }
+                },
+                "required": ["Mass dry soil [g]", "Pressure before reaction [kPa]", "Pressure after reaction [kPa]"]
+            }
+        },
+        "remarks": {
+            "description": "Remarks from test execution",
+            "type": "string"
+        },
+        "quality": {
+            "description": "Test quality score",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+        }
+    },
+    "required": ["testpoints", "remarks", "quality"]
+}
