@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/watercontent_processed.json-schema",
+    "title": "Water content processed",
+    "description": "JSON schema for processed data of a natural water content test",
+    "type": "object",
+    "properties": {
+        "Water content [%]": {
+            "description": "Water content",
+            "type": "number"
+        }
+    },
+    "required": ["Water content [%]"]
+}
