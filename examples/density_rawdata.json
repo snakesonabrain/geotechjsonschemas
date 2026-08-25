@@ -10,9 +10,11 @@
         "Mass container and wet soil [g]": 45.3,
         "Mass container and dry soil [g]": 40.1
     },
-    "remarks": "Soil appears dried out",
     "quality": {
         "quality class": "C",
         "quality score": 70
+    },
+    "execution": {
+        "execution_remarks": ""
     }
 }

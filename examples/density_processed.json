@@ -8,5 +8,10 @@
     "Specific gravity solids [-]": 2.65,
     "Void ratio [-]": 2.1,
     "Porosity [-]": 0.8,
-    "Saturation [%]": 75.4
+    "Saturation [%]": 75.4,
+    "processing": {
+        "processing_remarks": "",
+        "processed_by": "Bruno Stuyts",
+        "processing_date": "24/04/1983"
+    }
 }

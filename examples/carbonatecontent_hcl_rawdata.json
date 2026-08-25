@@ -16,9 +16,8 @@
             "Pressure after reaction [kPa]": 75
         }
     ],
-    "remarks": "Example remark",
-    "quality": {
-        "quality class": "C",
-        "quality score": 70
+    "quality": {},
+    "execution": {
+        "execution_remarks": "Execution metadata not available"
     }
 }

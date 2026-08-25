@@ -44,7 +44,11 @@
         "Saturation [%]": {
             "description": "Saturation of the soil",
             "type": "number"
+        },
+        "processing": {
+            "description": "Test processing metadata",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/processing.json-schema"
         }
     },
-    "required": ["Sample volume [mm3]", "Water content [%]", "Wet density [kg/m3]", "Dry density [kg/m3]", "Wet unit weight [kN/m3]", "Dry unit weight [kN/m3]", "Specific gravity solids [-]", "Void ratio [-]", "Porosity [-]", "Saturation [%]"]
+    "required": ["Sample volume [mm3]", "Water content [%]", "Wet density [kg/m3]", "Dry density [kg/m3]", "Wet unit weight [kN/m3]", "Dry unit weight [kN/m3]", "Specific gravity solids [-]", "Void ratio [-]", "Porosity [-]", "Saturation [%]", "processing"]
 }

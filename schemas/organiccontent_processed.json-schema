@@ -22,7 +22,11 @@
         "Average organic content [%]": {
             "description": "Average of the organic content tests (number used in reporting)",
             "type": "number"
+        },
+        "processing": {
+            "description": "Test processing metadata",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/processing.json-schema"
         }
     },
-    "required": ["testpoints", "Average organic content [%]"]
+    "required": ["testpoints", "Average organic content [%]", "processing"]
 }

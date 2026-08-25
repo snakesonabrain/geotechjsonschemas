@@ -13,9 +13,11 @@
             "Mass container and soil after test [g]": 32.1
         }
     ],
-    "remarks": "",
     "quality": {
-        "quality class": "B",
-        "quality score": 70
+        "quality_class": "B",
+        "quality_score": 70
+    },
+    "execution": {
+        "execution_remarks": "Had to wait a long time due to suspected dolomite"
     }
 }

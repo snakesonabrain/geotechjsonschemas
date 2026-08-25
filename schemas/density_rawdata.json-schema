@@ -29,14 +29,14 @@
             "description": "Water content data for the test point",
             "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/watercontent_rawdata.json-schema"
         },
-        "remarks": {
-            "description": "Remarks from test execution",
-            "type": "string"
-        },
         "quality": {
             "description": "Test execution quality score",
             "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+        },
+        "execution": {
+            "description": "Test execution metadata",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/execution.json-schema"
         }
     },
-    "required": ["container ID", "Container mass [g]", "Container diameter [mm]", "Container height [mm]", "Mass container and wet soil [g]", "watercontent", "remarks", "quality"]
+    "required": ["container ID", "Container mass [g]", "Container diameter [mm]", "Container height [mm]", "Mass container and wet soil [g]", "watercontent", "quality", "execution"]
 }

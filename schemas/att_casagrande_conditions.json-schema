@@ -1,0 +1,17 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/att_casagrande_conditions.schema.json",
+    "title": "Atterberg Casagrande conditions",
+    "description": "JSON schema for test conditions for Atterberg limit test with Casagrande method",
+    "type": "object",
+    "properties": {
+        "cup_id": {
+            "description": "ID of the Casagrande cup",
+            "type": "string"},
+        "remarks": {
+            "description": "Metadata for test conditions",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/testconditions.json-schema"
+        }
+    },
+    "required": [ "cup_id", "remarks"]
+}

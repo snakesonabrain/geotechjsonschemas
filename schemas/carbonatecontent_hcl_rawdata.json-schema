@@ -27,14 +27,14 @@
                 "required": ["Mass dry soil [g]", "Pressure before reaction [kPa]", "Pressure after reaction [kPa]"]
             }
         },
-        "remarks": {
-            "description": "Remarks from test execution",
-            "type": "string"
-        },
         "quality": {
             "description": "Test quality score",
             "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+        },
+        "execution": {
+            "description": "Test execution metadata",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/execution.json-schema"
         }
     },
-    "required": ["testpoints", "remarks", "quality"]
+    "required": ["testpoints", "quality", "execution"]
 }
