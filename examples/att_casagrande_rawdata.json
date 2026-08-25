@@ -8,8 +8,7 @@
                     "Mass container and wet soil [g]": 50.3,
                     "Mass container and dry soil [g]": 45.1
                 },
-                "No blows": 20,
-                "remarks": ""
+                "No blows": 20
             },
             {
                 "watercontent": {
@@ -18,8 +17,7 @@
                     "Mass container and wet soil [g]": 45.3,
                     "Mass container and dry soil [g]": 40.1
                 },
-                "No blows": 30,
-                "remarks": "Problems"
+                "No blows": 30
             }
         ],
         "quality": {

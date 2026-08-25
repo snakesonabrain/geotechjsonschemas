@@ -6,6 +6,10 @@ check-jsonschema --no-cache --schemafile ../schemas/att_casagrande_processed.jso
 
 check-jsonschema --no-cache --schemafile ../schemas/att_casagrande_rawdata.json-schema att_casagrande_rawdata.json
 
+check-jsonschema --no-cache --schemafile ../schemas/att_fallcone_processed.json-schema att_fallcone_processed.json
+
+check-jsonschema --no-cache --schemafile ../schemas/att_fallcone_rawdata.json-schema att_fallcone_rawdata.json
+
 check-jsonschema --no-cache --schemafile ../schemas/carbonatecontent_hcl_calibration.json-schema carbonatecontent_hcl_calibration.json
 
 check-jsonschema --no-cache --schemafile ../schemas/carbonatecontent_hcl_conditions.json-schema carbonatecontent_hcl_conditions.json
@@ -38,7 +42,9 @@ check-jsonschema --no-cache --schemafile ../schemas/psd_sieving_rawdata.json-sch
 
 check-jsonschema --no-cache --schemafile ../schemas/pycnometer_calibration.json-schema pycnometer_calibration.json
 
-check-jsonschema --no-cache --schemafile ../schemas/pycnometer_conditions.json-schema pycnometer_conditions.json
+check-jsonschema --no-cache --schemafile ../schemas/pycnometer_processed.json-schema pycnometer_processed.json
+
+check-jsonschema --no-cache --schemafile ../schemas/pycnometer_rawdata.json-schema pycnometer_rawdata.json
 
 check-jsonschema --no-cache --schemafile ../schemas/watercontent_processed.json-schema watercontent_processed.json
 

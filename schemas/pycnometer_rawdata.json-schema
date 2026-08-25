@@ -1,0 +1,48 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/pycnometer_rawdata.json-schema",
+    "title": "Pycnometer test raw data",
+    "description": "JSON schema for raw data of pycnometer test",
+    "type": "object",
+    "properties": {
+        "testpoints": {
+            "description": "Array with points of the individual tests (different specimens)",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Pycnometer ID": {
+                        "description": "ID of the pycnometer (from available calibrated flasks)",
+                        "type": "string"
+                    },
+                    "Mass pycnometer [g]": {
+                        "description": "Mass of the pycnometer (check calibration data)",
+                        "type": "number"
+                    },
+                    "Mass pycnometer + water (T=20°C) [g]": {
+                        "description": "Mass of the pycnometer and water at 20°C (check calibration data)",
+                        "type": "number"
+                    },
+                    "Mass pycnometer + soil [g]": {
+                        "description": "Mass of the pycnometer and soil",
+                        "type": "number"
+                    },
+                    "Mass pycnometer + soil + water (T=20°C) [g]": {
+                        "description": "Mass of the pycnometer and soil and water at 20°C",
+                        "type": "number"
+                    }
+                },
+                "required": ["Pycnometer ID", "Mass pycnometer [g]", "Mass pycnometer + water (T=20°C) [g]", "Mass pycnometer + soil [g]", "Mass pycnometer + soil + water (T=20°C) [g]"]
+            }
+        },
+        "quality": {
+            "description": "Test quality score",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+        },
+        "execution": {
+            "description": "Test execution metadata",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/execution.json-schema"
+        }
+    },
+    "required": ["testpoints", "quality", "execution"]
+}

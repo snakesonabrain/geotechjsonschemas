@@ -1,0 +1,29 @@
+{
+    "testpoints": [
+        {
+            "Pycnometer ID": "C1",
+            "Mass pycnometer [g]": 26.77,
+            "Mass pycnometer + water (T=20°C) [g]": 81.838,
+            "Mass pycnometer + soil [g]": 61.51,
+            "Mass pycnometer + soil + water (T=20°C) [g]": 102.1
+        },
+        {
+            "Pycnometer ID": "C2",
+            "Mass pycnometer [g]": 26.781,
+            "Mass pycnometer + water (T=20°C) [g]": 81.807,
+            "Mass pycnometer + soil [g]": 62.51,
+            "Mass pycnometer + soil + water (T=20°C) [g]": 101.1
+        },
+        {
+            "Pycnometer ID": "C3",
+            "Mass pycnometer [g]": 26.414,
+            "Mass pycnometer + water (T=20°C) [g]": 81.811,
+            "Mass pycnometer + soil [g]": 63.51,
+            "Mass pycnometer + soil + water (T=20°C) [g]": 103.2
+        }
+    ],
+    "quality": {},
+    "execution": {
+        "execution_remarks": "Execution metadata not available"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/att_fallcone_processed.schema.json",
+    "title": "Atterberg fall cone processed",
+    "description": "JSON schema for processed Atterberg limit data with fall cone method",
+    "type": "object",
+    "properties": {
+        "LL [%]": {
+            "description": "Liquid limit",
+            "type": "number"},
+        "PL [%]": {
+            "description": "Plastic limit",
+            "type": "number"},
+        "PI [%]": {
+            "description": "Plasticity index",
+            "type": "number"},
+        "WC 1mm [%]": {
+            "description": "Best fit line point 1",
+            "type": "number"},
+        "WC 100mm [%]": {
+            "description": "Best fit line point 2",
+            "type": "number"},
+        "quality": {
+            "description": "Test processing quality score",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+        },
+        "processing": {
+            "description": "Test processing metadata",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/processing.json-schema"
+        }
+    },
+    "required": [ "LL [%]", "PL [%]", "PI [%]", "quality", "processing"]
+}

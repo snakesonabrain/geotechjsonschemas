@@ -1,0 +1,21 @@
+{
+    "testpoints": [
+        {
+            "Mass soil [g]": 10.1,
+            "Specific gravity [-]": 2.67
+        },
+        {
+            "Mass soil [g]": 12.1,
+            "Specific gravity [-]": 2.63
+        },
+        {
+            "Mass soil [g]": 9.1,
+            "Specific gravity [-]": 2.61
+        }
+    ],
+    "Average specific gravity [-]": 2.65,
+    "quality": {},
+    "processing": {
+        "processing_remarks": "No remarks"
+    }
+}

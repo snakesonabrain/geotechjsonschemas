@@ -1,0 +1,50 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/att_fallcone_rawdata.json-schema",
+    "title": "Atterberg limit tests with the fall cone",
+    "description": "JSON schema for raw data of Atterberg limit tests with the fall cone",
+    "type": "object",
+    "properties": {
+        "testpoints": {
+            "description": "Array with points of the individual tests (different water contents)",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "watercontent": {
+                        "description": "Water content data for the test point",
+                        "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/watercontent_rawdata.json-schema"
+                    },
+                    "initial_positions": {
+                        "description": "Array with initial positions of the shaft (0.1 mm)",
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        },
+                        "minItems": 3
+                    },
+                    "final_positions": {
+                        "description": "Array with final positions of the shaft (0.1 mm)",
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        },
+                        "minItems": 3
+                    }
+                },
+                "required": ["watercontent", "initial_positions", "final_positions"]
+            },
+            "minItems": 5
+        },
+        "quality": {
+            "description": "Test quality score",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+        },
+        "execution": {
+            "description": "Test execution metadata",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/execution.json-schema"
+        }
+    },
+    "required": ["testpoints", "quality", "execution"]
+}
+       

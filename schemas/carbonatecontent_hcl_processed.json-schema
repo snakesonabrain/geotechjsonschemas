@@ -41,8 +41,5 @@
             "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/processing.json-schema"
         }
     },
-    "required": ["testpoints", "Average carbonate content [%]", "quality", "processing"],
-    "dependentRequired": {
-        "Calibration line intercept": ["Calibration line slope"]
-    }
+    "required": ["Average carbonate content [%]", "quality", "processing"]
 }

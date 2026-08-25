@@ -22,13 +22,9 @@
                             "no blows": {
                                 "description": "Number of blows",
                                 "type": "integer"
-                            },
-                            "remarks": {
-                                "description": "Remarks from test execution",
-                                "type": "string"
                             }
                         },
-                        "required": ["watercontent", "No blows", "remarks"]
+                        "required": ["watercontent", "No blows"]
                     }
                 },
                 "quality": {

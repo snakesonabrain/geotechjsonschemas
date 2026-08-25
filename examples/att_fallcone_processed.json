@@ -1,0 +1,14 @@
+{
+    "LL [%]": 91.7,
+    "PL [%]": 50.3,
+    "PI [%]": 41.4,
+    "WC 1mm [%]": 115,
+    "WC 100mm [%]": 85,
+    "quality": {
+        "quality_class": "N/A",
+        "quality_score": 65
+    },
+    "processing": {
+        "processing_remarks": "Processing unavailable"
+    }
+}

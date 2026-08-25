@@ -1,0 +1,40 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/pycnometer_processed.json-schema",
+    "title": "Pycnometer processed test data",
+    "description": "JSON schema for processed data of pycnometer test",
+    "type": "object",
+    "properties": {
+        "testpoints": {
+            "description": "Array with results of the individual tests (different specimens)",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Mass soil [g]": {
+                        "description": "Mass of the soil",
+                        "type": "number"
+                    },
+                    "Specific gravity [-]": {
+                        "description": "Specific gravity of the soil grains",
+                        "type": "number"
+                    }
+                },
+                "required": ["Specific gravity [-]"]
+            }
+        },
+        "Average specific gravity [-]": {
+            "description": "Average of the specific gravities (number used in reporting)",
+            "type": "number"
+        },
+        "quality": {
+            "description": "Test processing quality score",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+        },
+        "processing": {
+            "description": "Test processing metadata",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/processing.json-schema"
+        }
+    },
+    "required": ["Average specific gravity [-]", "quality", "processing"]
+}
