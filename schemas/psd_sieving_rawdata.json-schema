@@ -65,14 +65,14 @@
             },
             "required": [ "sizesB", "massesB"]
         },
-        "remarks": {
-            "description": "Remarks from test execution",
-            "type": "string"
-        },
         "quality": {
             "description": "Test execution quality score",
             "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+        },
+        "execution": {
+            "description": "Test execution metadata",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/execution.json-schema"
         }
     },
-    "required": [ "massA", "massBC", "organics_removed", "carbonates_removed", "sieving_A_fraction", "sieving_B_fraction", "remarks", "quality"]
+    "required": [ "massA", "massBC", "organics_removed", "carbonates_removed", "sieving_A_fraction", "sieving_B_fraction", "quality", "execution"]
 }

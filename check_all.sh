@@ -24,6 +24,8 @@ check-jsonschema --no-cache --schemafile ../schemas/organiccontent_processed.jso
 
 check-jsonschema --no-cache --schemafile ../schemas/organiccontent_rawdata.json-schema organiccontent_rawdata.json
 
+check-jsonschema --no-cache --schemafile ../schemas/psd_hydrometer_calibration.json-schema psd_hydrometer_calibration.json
+
 check-jsonschema --no-cache --schemafile ../schemas/psd_hydrometer_conditions.json-schema psd_hydrometer_conditions.json
 
 check-jsonschema --no-cache --schemafile ../schemas/psd_hydrometer_rawdata.json-schema psd_hydrometer_rawdata.json

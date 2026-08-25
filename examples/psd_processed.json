@@ -10,9 +10,11 @@
     "Cu [-]": 50.296,
     "Cc [-]": 3.201,
     "Fines content [%]": 64.5,
-    "remarks": "",
     "quality": {
         "quality class": "A",
         "quality score": 90
+    },
+    "processing": {
+        "processing_remarks": "Mismatch between sieving and hydrometer curve"
     }
 }

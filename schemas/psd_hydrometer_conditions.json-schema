@@ -12,37 +12,21 @@
             "description": "Solution used",
             "enum": ["DEMIN", "DECAL"]
         },
-        "offset": {
-            "description": "Distance between the top plate and the tip of the measurement device [mm]",
-            "type": "number"
-        },
         "suspension_volume": {
             "description": "Initial suspension volume [ml]",
-            "type": "number"
-        },
-        "mass_hydrometer": {
-            "description": "Mass of the hydrometer [gr]",
-            "type": "number"
-        },
-        "diameter_stem": {
-            "description": "Diameter of the stem of the hydrometer [mm]",
-            "type": "number"
-        },
-        "length_stem": {
-            "description": "Length of the stem of the hydrometer [mm]",
-            "type": "number"
-        },
-        "volume_bulb": {
-            "description": "Volume of the bulb of the hydrometer [mm3]",
             "type": "number"
         },
         "grain_density": {
             "description": "Grain density used for settling calculation [kg/m3]",
             "type": "number"
         },
-        "liquid_density_calibration_id": {
-            "description": "ID of the temperature vs liquid density calibration"
+        "hydrometer_calibration_id": {
+            "description": "ID of the hydrometer calibration"
+        },
+        "remarks": {
+            "description": "Metadata for test conditions",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/testconditions.json-schema"
         }
     },
-    "required": ["solution", "offset", "suspension_volume", "mass_hydrometer", "diameter_stem", "length_stem", "volume_bulb", "grain_density", "liquid_density_calibration_id"]
+    "required": ["starttemperature", "solution", "suspension_volume", "grain_density", "hydrometer_calibration_id", "remarks"]
 }

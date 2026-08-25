@@ -1,0 +1,182 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/psd_hydrometer_calibration.schema.json",
+    "title": "Calibration data for hydrometer test",
+    "description": "JSON schema for calibration data for hydrometer test",
+    "type": "object",
+    "properties": {
+        "calibration": {
+            "description": "Metadata for the calibration",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/calibration.json-schema"
+        },
+        "device_id": {
+            "description": "ID of the measurement device",
+            "type": "string"
+        },
+        "offset": {
+            "description": "Distance between the top plate and the tip of the measurement device [mm]",
+            "type": "number"
+        },
+        "hydrometer_id": {
+            "description": "ID of the hydrometer",
+            "type": "string"
+        },
+        "mass_hydrometer": {
+            "description": "Mass of the hydrometer [gr]",
+            "type": "number"
+        },
+        "diameter_stem": {
+            "description": "Diameter of the stem of the hydrometer [mm]",
+            "type": "number"
+        },
+        "length_stem": {
+            "description": "Length of the stem of the hydrometer [mm]",
+            "type": "number"
+        },
+        "volume_bulb": {
+            "description": "Volume of the bulb of the hydrometer [mm3]",
+            "type": "number"
+        },
+        "reading_a": {
+            "description": "Distance from top hydrometer to marking 0.995 [mm]",
+            "type": "number"
+        },
+        "reading_b": {
+            "description": "Offset between 0.995 and 1.038 markings [mm]",
+            "type": "number"
+        },
+        "demin_line_intercept": {
+            "description": "Intercept of the line rho liquid = a * T + b (rho liquid in kg/m3, T in °C) for demineralised water",
+            "type": "number"
+        },
+        "demin_line_slope": {
+            "description": "Slope of the line rho liquid = a * T + b (rho liquid in kg/m3, T in °C) for demineralised water",
+            "type": "number"
+        },
+        "decal_line_intercept": {
+            "description": "Intercept of the line rho liquid = a * T + b (rho liquid in kg/m3, T in °C) for decalcinated water",
+            "type": "number"
+        },
+        "decal_line_slope": {
+            "description": "Slope of the line rho liquid = a * T + b (rho liquid in kg/m3, T in °C) for decalcinated water",
+            "type": "number"
+        },
+        "data": {
+            "description": "Calibration data",
+            "type": "object",
+            "properties": {
+                "demin": {
+                    "description": "Calibration data for demineralised water",
+                    "type": "object",
+                    "properties": {
+                        "T [°C]": {
+                            "description": "Temperature during calibration",
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 2
+                        },
+                        "L1 [mm]": {
+                            "description": "L1 reading during calibration",
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 2
+                        },
+                        "L2 [mm]": {
+                            "description": "L2 reading during calibration",
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 2
+                        },
+                        "R [mm]": {
+                            "description": "R reading during calibration",
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 2
+                        },
+                        "V subm [mm3]": {
+                            "description": "Submerged volume during calibration",
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 2
+                        },
+                        "rho liquid [kg/m3]": {
+                            "description": "Inferred liquid density",
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 2
+                        }
+                    },
+                    "required": ["T [°C]", "rho liquid [kg/m3]"]
+                },
+                "decal": {
+                    "description": "Calibration data for decalcinated water",
+                    "type": "object",
+                    "properties": {
+                        "T [°C]": {
+                            "description": "Temperature during calibration",
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 2
+                        },
+                        "L1 [mm]": {
+                            "description": "L1 reading during calibration",
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 2
+                        },
+                        "L2 [mm]": {
+                            "description": "L2 reading during calibration",
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 2
+                        },
+                        "R [mm]": {
+                            "description": "R reading during calibration",
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 2
+                        },
+                        "V subm [mm3]": {
+                            "description": "Submerged volume during calibration",
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 2
+                        },
+                        "rho liquid [kg/m3]": {
+                            "description": "Inferred liquid density",
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 2
+                        }
+                    },
+                    "required": ["T [°C]", "rho liquid [kg/m3]"]
+                }
+            }
+        }
+    },
+    "required": ["calibration", "device_id", "offset", "hydrometer_id", "mass_hydrometer", "diameter_stem", "length_stem", "volume_bulb", "reading_a", "reading_b", "demin_line_intercept", "demin_line_slope", "decal_line_intercept", "decal_line_slope", "data"]
+}

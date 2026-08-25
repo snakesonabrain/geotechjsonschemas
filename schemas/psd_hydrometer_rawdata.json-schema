@@ -11,10 +11,6 @@
         "flaskdiameter": {
             "description": "Internal diameter of the hydrometer flask",
             "type": "number"},
-        "remarks": {
-            "description": "Remarks from test execution",
-            "type": "string"
-        },
         "hydrometer_data": {
             "type": "object",
             "properties": {
@@ -60,7 +56,11 @@
         "quality": {
             "description": "Test execution quality score",
             "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+        },
+        "execution": {
+            "description": "Test execution metadata",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/execution.json-schema"
         }
     },
-    "required": [ "mass", "flaskdiameter", "hydrometer_data", "remarks", "quality"]
+    "required": [ "mass", "flaskdiameter", "hydrometer_data", "quality", "execution"]
 }

@@ -65,14 +65,14 @@
             "description": "Percentages passing the No200 sieve (75micron)",
             "type": "number"
         },
-        "remarks": {
-            "description": "Remarks from test processing",
-            "type": "string"
-        },
         "quality": {
             "description": "Test processing quality score",
             "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+        },
+        "processing": {
+            "description": "Test processing metadata",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/processing.json-schema"
         }
     },
-    "required": [ "D [mm]", "Pct finer total [%]", "test stage", "remarks", "quality"]
+    "required": [ "D [mm]", "Pct finer total [%]", "test stage", "quality", "processing"]
 }

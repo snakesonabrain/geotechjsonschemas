@@ -21,7 +21,7 @@
             "description": "Mass of the container and the dry soil",
             "type": "number"
         },
-        "Execution": {
+        "execution": {
             "description": "Metadata on test execution",
             "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/execution.json-schema"
         }
