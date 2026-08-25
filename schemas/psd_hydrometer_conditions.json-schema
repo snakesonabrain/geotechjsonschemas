@@ -3,7 +3,8 @@
  "title": "PSD sieving raw",
  "description": "JSON schema for hydrometer conditions",
  "type": "object",
- "properties": {"starttemperature": {
+ "properties": {
+        "starttemperature": {
             "description": "Temperature at the start of the test [°C]",
             "type": "number"
         },
@@ -38,7 +39,10 @@
         "grain_density": {
             "description": "Grain density used for settling calculation [kg/m3]",
             "type": "number"
+        },
+        "liquid_density_calibration_id": {
+            "description": "ID of the temperature vs liquid density calibration"
         }
     },
-    "required": ["solution", "offset", "suspension_volume", "mass_hydrometer", "diameter_stem", "length_stem", "volume_bulb", "grain_density"]
+    "required": ["solution", "offset", "suspension_volume", "mass_hydrometer", "diameter_stem", "length_stem", "volume_bulb", "grain_density", "liquid_density_calibration_id"]
 }

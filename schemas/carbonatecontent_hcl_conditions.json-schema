@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/carbonatecontent_hcl_conditions.schema.json",
+    "title": "Test conditions for Carbonate content test with HCl",
+    "description": "JSON schema for test conditions for Carbonate content test with HCl effervescense",
+    "type": "object",
+    "properties": {
+        "pressurevessel_id": {
+            "description": "ID of the pressure vessel",
+            "type": "string"},
+        "caco3_calibration_id": {
+            "description": "ID of the pressure vessel calibration",
+            "type": "string"},
+        "remarks": {
+            "description": "Metadata for test conditions",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/testconditions.json-schema"
+        }
+    },
+    "required": ["pressurevessel_id", "caco3_calibration_id", "remarks"]
+}

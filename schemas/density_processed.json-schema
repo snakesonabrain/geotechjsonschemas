@@ -29,10 +29,6 @@
             "description": "Dry unit weight of the sample",
             "type": "number"
         },
-        "Specific gravity solids [-]": {
-            "description": "Specific gravity used or assumed for calculation",
-            "type": "number"
-        },
         "Void ratio [-]": {
             "description": "Void ratio of the soil",
             "type": "number"
@@ -50,5 +46,5 @@
             "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/processing.json-schema"
         }
     },
-    "required": ["Sample volume [mm3]", "Water content [%]", "Wet density [kg/m3]", "Dry density [kg/m3]", "Wet unit weight [kN/m3]", "Dry unit weight [kN/m3]", "Specific gravity solids [-]", "Void ratio [-]", "Porosity [-]", "Saturation [%]", "processing"]
+    "required": ["Sample volume [mm3]", "Water content [%]", "Wet density [kg/m3]", "Dry density [kg/m3]", "Wet unit weight [kN/m3]", "Dry unit weight [kN/m3]", "Void ratio [-]", "Porosity [-]", "Saturation [%]", "processing"]
 }

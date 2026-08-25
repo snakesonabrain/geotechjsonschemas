@@ -1,0 +1,56 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/carbonatecontent_hcl_calibration.schema.json",
+    "title": "Calibration data for Carbonate content test with HCl",
+    "description": "JSON schema for calibration data for pressure vessel for Carbonate content test with HCl effervescense",
+    "type": "object",
+    "properties": {
+        "calibration": {
+            "description": "Metadata for the calibration",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/calibration.json-schema"
+        },
+        "pressurevessel_id": {
+            "description": "ID of the pressure vessel",
+            "type": "string"
+        },
+        "line_intercept": {
+            "description": "Intercept of the line CaC03 = a * p_CO2 + b (CaCO3 in g, p_CO2 in kPa)",
+            "type": "number"
+        },
+        "line_slope": {
+            "description": "Slope of the line CaC03 = a * p_CO2 + b (CaCO3 in g, p_CO2 in kPa)",
+            "type": "number"
+        },
+        "data": {
+            "description": "Calibration data",
+            "type": "object",
+            "properties": {
+                "Mass CaCO3 [g]": {
+                    "description": "Mass of CaCO3 for point in the calibration curve",
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 2
+                },
+                "Final pressure [kPa]": {
+                    "description": "Final CO2 pressure for point in the calibration curve",
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 2
+                },
+                "Temperature [°C]": {
+                    "description": "Temperature for point in the calibration curve",
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 2
+                }
+            }
+        }
+    },
+    "required": ["calibration", "pressurevessel_id", "line_intercept", "line_slope", "data"]
+}

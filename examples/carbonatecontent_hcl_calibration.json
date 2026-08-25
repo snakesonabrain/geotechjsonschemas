@@ -1,0 +1,16 @@
+{
+    "calibration": {
+        "calibration_id": "caco3_bruno_20260825",
+        "calibration_by": "Bruno Stuyts",
+        "calibration_date": "24/04/1983",
+        "calibration_remarks": ""
+    },
+    "pressurevessel_id": "A",
+    "line_intercept": -0.013,
+    "line_slope": 0.040,
+    "data": {
+        "Mass CaCO3 [g]": [0.25, 0.3, 0.3, 0.4, 0.5, 0.5, 0.75, 1, 1.5],
+        "Final pressure [kPa]": [6.86799618, 7.82643516, 7.90486696, 10.2141399, 12.85857694, 12.95651307, 19.13090884, 25.57282602, 38.15587205],
+        "Temperature [°C]": [19.5, 19.5, 19.5, 19.5, 19.5, 19.5, 19.5, 19.5, 19.5]
+    }
+}

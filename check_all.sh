@@ -6,9 +6,15 @@ check-jsonschema --no-cache --schemafile ../schemas/att_casagrande_processed.jso
 
 check-jsonschema --no-cache --schemafile ../schemas/att_casagrande_rawdata.json-schema att_casagrande_rawdata.json
 
-# check-jsonschema --no-cache --schemafile ../schemas/carbonatecontent_hcl_processed.json-schema carbonatecontent_hcl_processed.json
+check-jsonschema --no-cache --schemafile ../schemas/carbonatecontent_hcl_calibration.json-schema carbonatecontent_hcl_calibration.json
+
+check-jsonschema --no-cache --schemafile ../schemas/carbonatecontent_hcl_conditions.json-schema carbonatecontent_hcl_conditions.json
+
+check-jsonschema --no-cache --schemafile ../schemas/carbonatecontent_hcl_processed.json-schema carbonatecontent_hcl_processed.json
 
 check-jsonschema --no-cache --schemafile ../schemas/carbonatecontent_hcl_rawdata.json-schema carbonatecontent_hcl_rawdata.json
+
+check-jsonschema --no-cache --schemafile ../schemas/density_conditions.json-schema density_conditions.json
 
 check-jsonschema --no-cache --schemafile ../schemas/density_processed.json-schema density_processed.json
 

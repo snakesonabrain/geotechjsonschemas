@@ -1,0 +1,24 @@
+{
+    "testpoints": [
+        {
+            "Measured pressure [kPa]": 15,
+            "Mass CaCO3 [g]": 1,
+            "Carbonate content [%]": 5.3
+        },
+        {
+            "Measured pressure [kPa]": 17,
+            "Mass CaCO3 [g]": 1.2,
+            "Carbonate content [%]": 6.3
+        },
+        {
+            "Measured pressure [kPa]": 13,
+            "Mass CaCO3 [g]": 0.8,
+            "Carbonate content [%]": 4.3
+        }
+    ],
+    "Average carbonate content [%]": 5.3,
+    "quality": {},
+    "processing": {
+        "processing_remarks": "No remarks"
+    }
+}

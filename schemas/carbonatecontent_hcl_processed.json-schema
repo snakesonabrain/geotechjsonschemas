@@ -11,18 +11,38 @@
             "items": {
                 "type": "object",
                 "properties": {
-                    "Organic content [%]": {
-                        "description": "Organic content of the specimen",
+                    "Measured pressure [kPa]": {
+                        "description": "Measured pressure difference between start and end of test",
+                        "type": "number"
+                    },
+                    "Mass CaCO3 [g]": {
+                        "description": "Inferred mass of calcium carbonate",
+                        "type": "number"
+                    },
+                    "Carbonate content [%]": {
+                        "description": "Carbonate content (ratio of CaCO3 mass to dry soil mass)",
                         "type": "number"
                     }
+                    
                 },
-                "required": ["Organic content [%]"]
+                "required": ["Carbonate content [%]"]
             }
         },
-        "Average organic content [%]": {
-            "description": "Average of the organic content tests (number used in reporting)",
+        "Average carbonate content [%]": {
+            "description": "Average of the carbonate content tests (number used in reporting)",
             "type": "number"
+        },
+        "quality": {
+            "description": "Test processing quality score",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/quality_score.json-schema"
+        },
+        "processing": {
+            "description": "Test processing metadata",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/processing.json-schema"
         }
     },
-    "required": ["testpoints", "Average organic content [%]"]
+    "required": ["testpoints", "Average carbonate content [%]", "quality", "processing"],
+    "dependentRequired": {
+        "Calibration line intercept": ["Calibration line slope"]
+    }
 }
