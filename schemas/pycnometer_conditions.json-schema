@@ -1,0 +1,17 @@
+{"$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/pycnometer_conditions.schema.json",
+ "title": "Conditions and assumptions for the pycnometer test",
+ "description": "JSON schema for pycnometer conditions",
+ "type": "object",
+ "properties": {
+        "Specific gravity solids [-]": {
+            "description": "Grain density used for settling calculation [kg/m3]",
+            "type": "number"
+        },
+        "remarks": {
+            "description": "Metadata for test conditions",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/testconditions.json-schema"
+        }
+    },
+    "required": ["Specific gravity solids [-]", "remarks"]
+}

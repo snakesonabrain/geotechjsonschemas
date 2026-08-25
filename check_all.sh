@@ -36,6 +36,10 @@ check-jsonschema --no-cache --schemafile ../schemas/psd_sieving_conditions.json-
 
 check-jsonschema --no-cache --schemafile ../schemas/psd_sieving_rawdata.json-schema psd_sieving_rawdata.json
 
+check-jsonschema --no-cache --schemafile ../schemas/pycnometer_calibration.json-schema pycnometer_calibration.json
+
+check-jsonschema --no-cache --schemafile ../schemas/pycnometer_conditions.json-schema pycnometer_conditions.json
+
 check-jsonschema --no-cache --schemafile ../schemas/watercontent_processed.json-schema watercontent_processed.json
 
 check-jsonschema --no-cache --schemafile ../schemas/watercontent_rawdata.json-schema watercontent_rawdata.json

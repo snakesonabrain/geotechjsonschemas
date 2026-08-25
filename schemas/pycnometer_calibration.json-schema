@@ -1,0 +1,42 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/pycnometer_calibration.schema.json",
+    "title": "Calibration data for pycnometer test",
+    "description": "JSON schema for calibration data for pycnometer tests",
+    "type": "object",
+    "properties": {
+        "calibration": {
+            "description": "Metadata for the calibration",
+            "$ref": "https://raw.githubusercontent.com/snakesonabrain/geotechjsonschemas/refs/heads/main/schemas/calibration.json-schema"
+        },
+        "data": {
+            "description": "Calibration data",
+            "type": "object",
+            "properties": {
+                "pycnometers": {
+                    "description": "Array with pycnometer calibrations",
+                    "type": "array",
+                    "items": {
+                        "type": "object"
+                    },
+                    "properties": {
+                        "pycnometer_id": {
+                            "description": "ID for a pycnometer",
+                            "type": "string"
+                        },
+                        "mass_pycnometer": {
+                            "description": "Mass of the pycnometer in g",
+                            "type": "number"
+                        },
+                        "mass_pycnometer_water": {
+                            "description": "Mass of the pycnometer and water at 20°C in g",
+                            "type": "number"
+                        }
+                    },
+                    "required": ["pycnometer_id", "mass_pycnometer", "mass_pycnometer_water"]
+                }
+            }
+        }
+    },
+    "required": ["calibration", "data"]
+}

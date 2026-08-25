@@ -1,0 +1,42 @@
+{
+    "calibration": {
+        "calibration_id": "pycnometer_bruno_20260825",
+        "calibration_by": "Bruno Stuyts",
+        "calibration_date": "24/04/1983",
+        "calibration_remarks": ""
+    },
+    "data": {
+        "pycnometers": [
+            {
+                "pycnometer_id": "C1",
+                "mass_pycnometer": 26.77,
+                "mass_pycnometer_water": 81.838 
+            },
+            {
+                "pycnometer_id": "C2",
+                "mass_pycnometer": 26.781,
+                "mass_pycnometer_water": 81.807
+            },
+            {
+                "pycnometer_id": "C3",
+                "mass_pycnometer": 26.414,
+                "mass_pycnometer_water": 81.811
+            },
+            {
+                "pycnometer_id": "2A",
+                "mass_pycnometer": 29.571,
+                "mass_pycnometer_water": 90.675
+            },
+            {
+                "pycnometer_id": "2B",
+                "mass_pycnometer": 29.3,
+                "mass_pycnometer_water": 94.64
+            },
+            {
+                "pycnometer_id": "14",
+                "mass_pycnometer": 29.16,
+                "mass_pycnometer_water": 91.01
+            }
+        ]
+    }
+}
