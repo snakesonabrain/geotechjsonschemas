@@ -8,7 +8,7 @@
                     "Mass container and wet soil [g]": 50.3,
                     "Mass container and dry soil [g]": 45.1
                 },
-                "No blows": 20
+                "no blows": 20
             },
             {
                 "watercontent": {
@@ -17,12 +17,12 @@
                     "Mass container and wet soil [g]": 45.3,
                     "Mass container and dry soil [g]": 40.1
                 },
-                "No blows": 30
+                "no blows": 30
             }
         ],
         "quality": {
-            "quality class": "B",
-            "quality score": 70
+            "quality_class": "B",
+            "quality_score": 70
         },
         "execution": {
             "execution_remarks": "Metadata not available"
@@ -36,8 +36,8 @@
             "Mass container and dry soil [g]": 45.1
         },
         "quality": {
-            "quality class": "B",
-            "quality score": 70
+            "quality_class": "B",
+            "quality_score": 70
         },
         "execution": {
             "executed_by": "Bruno Stuyts",

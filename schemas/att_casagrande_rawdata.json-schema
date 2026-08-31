@@ -24,7 +24,7 @@
                                 "type": "integer"
                             }
                         },
-                        "required": ["watercontent", "No blows"]
+                        "required": ["watercontent", "no blows"]
                     }
                 },
                 "quality": {
